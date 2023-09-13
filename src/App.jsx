@@ -8,6 +8,8 @@ import "../node_modules/animate.css"
 import "./App.css";
 import "./components/HabitChart"
 import HabitChart from "./components/HabitChart";
+import Register from "./Register";
+import Login from "./Login"
 Chart.register(CategoryScale)
 const App = () => {
   const [habits, setHabits] = useState(null);
@@ -30,6 +32,8 @@ const App = () => {
 
   return (
     <>
+      <Register/>
+      <Login/>
       <h1>Productibity Tracker</h1>
       <div className="main">
         <div className="habits">
